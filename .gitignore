@@ -1,0 +1,39 @@
+# Configurações e credenciais
+.env
+.env.*
+!.env.example
+config/secrets.php
+*.pem
+*.key
+
+# Documentos PDF
+*.pdf
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+*.cache
+*.bak
+*.old
+*.swp
+*.swo
+
+# Dependências
+/vendor/
+/node_modules/
+/checklist/docs/
+/checklist/docs_old/
+/chamados/image/
+/docs/
+/pdf/
+/docsrtto/
+/checklist/nextfleetfotos/
+/gestao/vendor/
+/multas/docs/
+/gestao/docs/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
