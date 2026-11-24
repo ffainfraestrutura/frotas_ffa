@@ -1,0 +1,113 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu_container{
+    background-color: #00b4d8;
+    margin: 0px;
+}
+
+#logo{
+    width: 20%;
+    aspect-ratio: 1;
+}
+
+.text-custom{
+    font-size: 28px;
+}
+
+.w-10{
+    width: 10% !important;
+}
+
+.w-9{
+    width: 9% !important;
+}
+
+.w-15{
+    width: 15% !important;
+}
+
+.bg-gray{
+    background-color: #e9e9e9f5;
+}
+
+#search_driver + label, #search_car + label{
+    cursor: pointer;
+}
+
+#search_driver + label, #search_car + label{
+    color: #a3a3a3;
+}
+
+#search_driver:checked + label{
+    color:#fff !important;
+}
+
+#search_car:checked + label{
+    color:#fff !important;
+}
+
+#search-input{
+    outline: none;
+    height: 32px;
+}
+
+.shadow-bottom{
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.dropdown{
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+
+.search-item{
+    min-height: 160px;
+    max-height: 160px;
+}
+
+p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.f-size-12{
+    font-size: 12px;
+}
+
+.dropdown::-webkit-scrollbar{
+    display: none;
+}
+
+.gray-transparent{
+    color: #535353e0;
+}
+
+@keyframes subirDescer {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.gray-transparent{
+    animation: subirDescer 2s infinite;
+}
+.bl-drop{
+    border-left: 2px solid #00000014;
+    height: 100%;
+}
+
+.button-search-dropdown{
+    box-sizing: unset;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}

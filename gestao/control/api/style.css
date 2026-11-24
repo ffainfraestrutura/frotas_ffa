@@ -1,0 +1,12 @@
+html, body, *{
+    padding: 0px;
+    margin: 0px;
+}
+
+.button-search-dropdown{
+    box-sizing: unset;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,23 @@
+<?php
+
+require("phpmailer/class.phpmailer.php");
+
+$mailer = new PHPMailer();
+$mailer->IsSMTP();
+$mailer->SMTPDebug = 1;
+$mailer->Port = 587; //Indica a porta de conexão para a saída de e-mails
+$mailer->Host = 'smtp.ffainfraestrutura.com.br';
+$mailer->SMTPAuth = true; //define se haverá ou não autenticação no SMTP
+$mailer->Username = 'informatica@ffainfraestrutura.com.br'; //Informe o e-mai o completo
+$mailer->Password = 'Inf424218!'; //Senha da caixa postal
+$mailer->FromName = 'Lucas'; //Nome que será exibido para o destinatário
+$mailer->From = 'informatica@ffainfraestrutura.com.br'; //Obrigatório ser a mesma caixa postal indicada em "username"
+$mailer->AddAddress('lucasabmoreira@gmail.com','Lucas Moreira'); //Destinatários
+$mailer->Subject = 'Teste enviado através do PHP Mailer';
+$mailer->Body = 'Este é um teste realizado com o PHP Mailer';
+if(!$mailer->Send())
+{
+echo "Erro no Envio!";
+echo "Mailer Error: " . $mailer->ErrorInfo; exit; }
+print "E-mail enviado!"
+?>
